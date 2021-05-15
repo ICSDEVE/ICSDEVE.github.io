@@ -1,0 +1,28 @@
+# 允许所有用户代理的浏览器爬虫进行访问（爬起数据）
+User-agent: *
+
+# 允许访问的内容
+Allow: /
+Allow: /2021/
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /about/
+Allow: /changelog/
+
+# 不允许访问的内容
+Disallow: /assets/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /img/
+Disallow: /files/
+Disallow: /js/
+Disallow: /music/
+Disallow: /css/
+
+Disallow: /*.js
+Disallow: /*.css
+
+# 网站地图Sitemap
+Sitemap: https://icsdeve.github.io/sitemap.xml
+Sitemap: https://icsdeve.github.io/baidusitemap.xml
