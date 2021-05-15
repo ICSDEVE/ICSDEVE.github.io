@@ -24,5 +24,5 @@ Disallow: /*.js
 Disallow: /*.css
 
 # 网站地图Sitemap
-Sitemap: https://icsdeve.github.io/sitemap.xml
-Sitemap: https://icsdeve.github.io/baidusitemap.xml
+Sitemap: https://blog.icscraft.top/sitemap.xml
+Sitemap: https://blog.icscraft.top/baidusitemap.xml

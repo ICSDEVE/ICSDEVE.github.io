@@ -3,11 +3,11 @@
   <title>Miracle_Ink&#39;s Blog</title>
   
   
-  <link href="https://icsdeve.github.io/atom.xml" rel="self"/>
+  <link href="https://blog.icscraft.top/atom.xml" rel="self"/>
   
-  <link href="https://icsdeve.github.io/"/>
+  <link href="https://blog.icscraft.top/"/>
   <updated>2021-05-13T15:52:05.604Z</updated>
-  <id>https://icsdeve.github.io/</id>
+  <id>https://blog.icscraft.top/</id>
   
   <author>
     <name>Miracle_Ink</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>钢铁是怎样炼成的 - 职务分配</title>
-    <link href="https://icsdeve.github.io/2021/05/12/%E9%92%A2%E9%93%81%E6%98%AF%E6%80%8E%E6%A0%B7%E7%82%BC%E6%88%90%E7%9A%84%20-%20%E8%81%8C%E5%8A%A1%E5%88%86%E9%85%8D/"/>
-    <id>https://icsdeve.github.io/2021/05/12/%E9%92%A2%E9%93%81%E6%98%AF%E6%80%8E%E6%A0%B7%E7%82%BC%E6%88%90%E7%9A%84%20-%20%E8%81%8C%E5%8A%A1%E5%88%86%E9%85%8D/</id>
+    <link href="https://blog.icscraft.top/2021/05/12/%E9%92%A2%E9%93%81%E6%98%AF%E6%80%8E%E6%A0%B7%E7%82%BC%E6%88%90%E7%9A%84%20-%20%E8%81%8C%E5%8A%A1%E5%88%86%E9%85%8D/"/>
+    <id>https://blog.icscraft.top/2021/05/12/%E9%92%A2%E9%93%81%E6%98%AF%E6%80%8E%E6%A0%B7%E7%82%BC%E6%88%90%E7%9A%84%20-%20%E8%81%8C%E5%8A%A1%E5%88%86%E9%85%8D/</id>
     <published>2021-05-12T12:52:14.000Z</published>
     <updated>2021-05-13T15:52:05.604Z</updated>
     
@@ -34,17 +34,17 @@
     
     
     
-    <category term="School" scheme="https://icsdeve.github.io/categories/School/"/>
+    <category term="School" scheme="https://blog.icscraft.top/categories/School/"/>
     
     
-    <category term="School" scheme="https://icsdeve.github.io/tags/School/"/>
+    <category term="School" scheme="https://blog.icscraft.top/tags/School/"/>
     
   </entry>
   
   <entry>
     <title>米瑞科技&amp;IZUAL-Logo正式完成!</title>
-    <link href="https://icsdeve.github.io/2021/05/10/%E7%B1%B3%E7%91%9E%E7%A7%91%E6%8A%80-IZUAL-Logo%E6%AD%A3%E5%BC%8F%E5%AE%8C%E6%88%90/"/>
-    <id>https://icsdeve.github.io/2021/05/10/%E7%B1%B3%E7%91%9E%E7%A7%91%E6%8A%80-IZUAL-Logo%E6%AD%A3%E5%BC%8F%E5%AE%8C%E6%88%90/</id>
+    <link href="https://blog.icscraft.top/2021/05/10/%E7%B1%B3%E7%91%9E%E7%A7%91%E6%8A%80-IZUAL-Logo%E6%AD%A3%E5%BC%8F%E5%AE%8C%E6%88%90/"/>
+    <id>https://blog.icscraft.top/2021/05/10/%E7%B1%B3%E7%91%9E%E7%A7%91%E6%8A%80-IZUAL-Logo%E6%AD%A3%E5%BC%8F%E5%AE%8C%E6%88%90/</id>
     <published>2021-05-10T12:33:46.000Z</published>
     <updated>2021-05-13T15:52:03.096Z</updated>
     
@@ -58,17 +58,17 @@
     
     
     
-    <category term="Company" scheme="https://icsdeve.github.io/categories/Company/"/>
+    <category term="Company" scheme="https://blog.icscraft.top/categories/Company/"/>
     
     
-    <category term="Miracle" scheme="https://icsdeve.github.io/tags/Miracle/"/>
+    <category term="Miracle" scheme="https://blog.icscraft.top/tags/Miracle/"/>
     
   </entry>
   
   <entry>
     <title>Dart数据类型详解[int double String bool List Maps]</title>
-    <link href="https://icsdeve.github.io/2021/05/01/Dart%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%AF%A6%E8%A7%A3[int%20double%20String%20bool%20List%20Maps]/"/>
-    <id>https://icsdeve.github.io/2021/05/01/Dart%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%AF%A6%E8%A7%A3[int%20double%20String%20bool%20List%20Maps]/</id>
+    <link href="https://blog.icscraft.top/2021/05/01/Dart%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%AF%A6%E8%A7%A3[int%20double%20String%20bool%20List%20Maps]/"/>
+    <id>https://blog.icscraft.top/2021/05/01/Dart%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%AF%A6%E8%A7%A3[int%20double%20String%20bool%20List%20Maps]/</id>
     <published>2021-04-30T23:31:43.000Z</published>
     <updated>2021-05-13T13:46:41.384Z</updated>
     
@@ -82,17 +82,17 @@
     
     
     
-    <category term="Dart" scheme="https://icsdeve.github.io/categories/Dart/"/>
+    <category term="Dart" scheme="https://blog.icscraft.top/categories/Dart/"/>
     
     
-    <category term="Learn" scheme="https://icsdeve.github.io/tags/Learn/"/>
+    <category term="Learn" scheme="https://blog.icscraft.top/tags/Learn/"/>
     
   </entry>
   
   <entry>
     <title>Dart入口方法 Print函数 注释 变量 常量和命名规则</title>
-    <link href="https://icsdeve.github.io/2021/04/26/Dart%E5%85%A5%E5%8F%A3%E6%96%B9%E6%B3%95-Print%E5%87%BD%E6%95%B0-%E6%B3%A8%E9%87%8A-%E5%8F%98%E9%87%8F-%E5%B8%B8%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/"/>
-    <id>https://icsdeve.github.io/2021/04/26/Dart%E5%85%A5%E5%8F%A3%E6%96%B9%E6%B3%95-Print%E5%87%BD%E6%95%B0-%E6%B3%A8%E9%87%8A-%E5%8F%98%E9%87%8F-%E5%B8%B8%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/</id>
+    <link href="https://blog.icscraft.top/2021/04/26/Dart%E5%85%A5%E5%8F%A3%E6%96%B9%E6%B3%95-Print%E5%87%BD%E6%95%B0-%E6%B3%A8%E9%87%8A-%E5%8F%98%E9%87%8F-%E5%B8%B8%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/"/>
+    <id>https://blog.icscraft.top/2021/04/26/Dart%E5%85%A5%E5%8F%A3%E6%96%B9%E6%B3%95-Print%E5%87%BD%E6%95%B0-%E6%B3%A8%E9%87%8A-%E5%8F%98%E9%87%8F-%E5%B8%B8%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/</id>
     <published>2021-04-26T13:38:01.000Z</published>
     <updated>2021-05-13T13:46:40.853Z</updated>
     
@@ -106,17 +106,17 @@
     
     
     
-    <category term="Dart" scheme="https://icsdeve.github.io/categories/Dart/"/>
+    <category term="Dart" scheme="https://blog.icscraft.top/categories/Dart/"/>
     
     
-    <category term="Learn" scheme="https://icsdeve.github.io/tags/Learn/"/>
+    <category term="Learn" scheme="https://blog.icscraft.top/tags/Learn/"/>
     
   </entry>
   
   <entry>
     <title>Dart介绍 环境搭建 开发工具配置</title>
-    <link href="https://icsdeve.github.io/2021/04/26/Dart%E4%BB%8B%E7%BB%8D-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/"/>
-    <id>https://icsdeve.github.io/2021/04/26/Dart%E4%BB%8B%E7%BB%8D-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://blog.icscraft.top/2021/04/26/Dart%E4%BB%8B%E7%BB%8D-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/"/>
+    <id>https://blog.icscraft.top/2021/04/26/Dart%E4%BB%8B%E7%BB%8D-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/</id>
     <published>2021-04-26T13:34:05.000Z</published>
     <updated>2021-05-13T13:46:40.320Z</updated>
     
@@ -131,10 +131,10 @@
     
     
     
-    <category term="Dart" scheme="https://icsdeve.github.io/categories/Dart/"/>
+    <category term="Dart" scheme="https://blog.icscraft.top/categories/Dart/"/>
     
     
-    <category term="Learn" scheme="https://icsdeve.github.io/tags/Learn/"/>
+    <category term="Learn" scheme="https://blog.icscraft.top/tags/Learn/"/>
     
   </entry>
   
