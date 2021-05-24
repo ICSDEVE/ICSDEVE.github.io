@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="keywords" content="Hexo Theme Contracted"><meta name="description" content="Hexo Theme Contracted"><meta name="author" content="Jehovah"><meta name="google-site-verification" content="V6t5Q7JjBi9nUFNW0yncgqwfqmXsD2ZsfNETpUUX-Fs"><meta name="baidu-site-verification" content="code-wnuJM6LgAr"><script src="/js/libs/echarts.min.js"></script><title> &#x7EDF;&#x8BA1; | Jehovah&apos;s Blog</title><link rel="stylesheet" href="/css/style.css"><link rel="shortcut icon" href="/images/logo.svg"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/css/font-awesome.min.css"><script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"blog.icscraft.top","root":"/","language":"zh-CN","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","images":"/images","files":"/files","root":"/","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"黄色的森林分出两条路，我选择了人迹更少的那一条，从此决定我一生的道路。"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":false},"version":"3.4.2"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
+  </script><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?92c09d7a122acf387b73b47cb02e1b13";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-88SNYLPVKJ"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-88SNYLPVKJ")</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Jehovah&apos;s Blog" type="application/atom+xml"></head><body><div class="progress-bar-container"><span class="scroll-progress-bar"></span><span class="pjax-progress-bar"></span><span class="pjax-progress-icon"><i class="fas fa-circle-notch fa-spin"></i></span></div><main class="page-container"><div class="page-main-content"><div class="page-main-content-top"><header class="header-wrapper"><div class="header-content"><div class="left"> <a class="logo-title" href="/">Jehovah&apos;s Blog</a></div><div class="right"><div class="pc"><ul class="menu-list"><li class="menu-item"> <a class href="/">&#x9996;&#x9875;</a></li><li class="menu-item"> <a class href="/archives">&#x5F52;&#x6863;</a></li><li class="menu-item"> <a class href="/categories">&#x5206;&#x7C7B;</a></li><li class="menu-item"> <a class href="/tags">&#x6807;&#x7B7E;</a></li><li class="menu-item"> <a class href="/about">&#x5173;&#x4E8E;</a></li><li class="menu-item"> <a class href="/changelog">&#x66F4;&#x65B0;&#x65E5;&#x5FD7;</a></li><li class="menu-item"> <a class="active" href="/charts">&#x7EDF;&#x8BA1;</a></li><li class="menu-item search search-popup-trigger"><i class="fas fa-search"></i></li></ul></div><div class="mobile"><div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div><div class="icon-item menu-bar"><div class="menu-bar-middle"></div></div></div></div></div><div class="header-drawer"><ul class="drawer-menu-list"><li class="drawer-menu-item flex-center"> <a class href="/">&#x9996;&#x9875;</a></li><li class="drawer-menu-item flex-center"> <a class href="/archives">&#x5F52;&#x6863;</a></li><li class="drawer-menu-item flex-center"> <a class href="/categories">&#x5206;&#x7C7B;</a></li><li class="drawer-menu-item flex-center"> <a class href="/tags">&#x6807;&#x7B7E;</a></li><li class="drawer-menu-item flex-center"> <a class href="/about">&#x5173;&#x4E8E;</a></li><li class="drawer-menu-item flex-center"> <a class href="/changelog">&#x66F4;&#x65B0;&#x65E5;&#x5FD7;</a></li><li class="drawer-menu-item flex-center"> <a class="active" href="/charts">&#x7EDF;&#x8BA1;</a></li></ul></div><div class="window-mask"></div></header></div><div class="page-main-content-middle"><div class="main-content"><div class="fade-in-down-animation"><div class="page-template-container"><div class="page-template-content markdown-body"><div id="posts-chart" style="background-color:#20232a;border-radius:10px;height:300px;padding:.5rem"></div><script id="postsChart">
+    var postsChart = echarts.init(document.getElementById('posts-chart'), 'light');
+    var postsOption = {
+      textStyle: {
+        color: '#FFF'
+      },
+      title: {
+        text: '文章发布统计图',
+        x: 'center',
+        textStyle: {
+          color: '#FFF'
+        }
+      },
+      tooltip: {
+        trigger: 'axis'
+      },
+      xAxis: {
+        name: '日期',
+        type: 'category',
+        axisTick: {
+          show: false
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: '#FFF'
+          }
+        },
+        data: ["2021-04","2021-05"]
+      },
+      yAxis: {
+        name: '文章篇数',
+        type: 'value',
+        splitLine: {
+          show: false
+        },
+        axisTick: {
+          show: false
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: '#FFF'
+          }
+        }
+      },
+      series: [{
+        name: '文章篇数',
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+            width: 0
+        },
+        showSymbol: false,
+        itemStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          },
+          {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        areaStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          }, {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        data: [2,5],
+        markLine: {
+          data: [{
+            name: '平均值',
+            type: 'average'
+          }]
+        }
+      }]
+    };
+    postsChart.setOption(postsOption);
+    window.addEventListener("resize", () => {
+      postsChart.resize();
+    });
+    </script><div id="tags-chart" data-length="10" style="background-color:#20232a;border-radius:10px;height:300px;padding:.5rem"></div><script id="tagsChart">
+    var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
+    var tagsOption = {
+      textStyle: {
+        color: '#FFF'
+      },
+      title: {
+        text: 'Top 5 标签统计图',
+        x: 'center',
+        textStyle: {
+          color: '#FFF'
+        }
+      },
+      tooltip: {},
+      xAxis: [{
+        name: '标签',
+        type: 'category',
+        axisTick: {
+          show: false
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: '#FFF'
+          }
+        },
+        data: ["Learn","Github","Life","School","Miracle"]
+      }],
+      yAxis: [{
+        name: '文章篇数',
+        type: 'value',
+        splitLine: {
+          show: false
+        },
+        axisTick: {
+          show: false
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: '#FFF'
+          }
+        }
+      }],
+      series: [{
+        name: '文章篇数',
+        type: 'bar',
+        data: [3,1,1,1,1],
+        itemStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          },
+          {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        emphasis: {
+          itemStyle: {
+            opacity: 1,
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+              offset: 0,
+              color: 'rgba(128, 255, 195)'
+            },
+            {
+              offset: 1,
+              color: 'rgba(1, 211, 255)'
+            }])
+          }
+        },
+        markLine: {
+          data: [{
+            name: '平均值',
+            type: 'average'
+          }]
+        }
+      }]
+    };
+    tagsChart.setOption(tagsOption);
+    window.addEventListener("resize", () => {
+      tagsChart.resize();
+    });
+    </script><div id="categories-chart" style="background-color:#20232a;border-radius:10px;height:300px;padding:.5rem"></div><script id="categoriesChart">
+    var categoriesChart = echarts.init(document.getElementById('categories-chart'), 'light');
+    var categoriesOption = {
+      textStyle: {
+        color: '#FFF'
+      },
+      title: {
+        text: '文章分类统计图',
+        x: 'center',
+        textStyle: {
+          color: '#FFF'
+        }
+      },
+      legend: {
+        top: 'bottom',
+        textStyle: {
+          color: '#FFF'
+        }
+      },
+      tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+      },
+      series: [{
+        name: '文章篇数',
+        type: 'pie',
+        radius: [30, 80],
+        center: ['50%', '50%'],
+        roseType: 'area',
+        label: {
+          formatter: "{b} : {c} ({d}%)"
+        },
+        data: [{"name":"Dart","value":3},{"name":"News","value":1},{"name":"Daily","value":1},{"name":"School","value":1},{"name":"Company","value":1}],
+        itemStyle: {
+          emphasis: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(255, 255, 255, 0.5)'
+          }
+        }
+      }]
+    };
+    categoriesChart.setOption(categoriesOption);
+    window.addEventListener("resize", () => {
+      categoriesChart.resize();
+    });
+    </script></div><div class="page-template-comments"></div></div></div></div></div><div class="page-main-content-bottom"><footer class="footer"><div class="info-container"><script>function unmouse(){document.oncontextmenu=new Function("return false;"),document.onkeydown=document.onkeyup=document.onkeypress=function(e){var n=e||window.event||arguments.callee.caller.arguments[0];if(n&&(123==n.keyCode||116==n.keyCode&&"keypress"!=n.type))return n.returnValue=!1}}unmouse()</script><div class="twopeople"><div class="container" style="height:200px"><canvas class="illo" width="800" height="800" style="max-width:200px;max-height:200px;touch-action:none;width:640px;height:640px"></canvas></div><script src="/js/libs/twopeople1.js"></script><script src="/js/libs/zdog.dist.js"></script><script id="rendered-js" src="/js/libs/twopeople.js"></script><style>.twopeople{margin:0;align-items:center;justify-content:center;text-align:center}canvas{display:block;margin:0 auto;cursor:move}</style></div> <span id="timeDate">&#x8F7D;&#x5165;&#x5929;&#x6570;...</span><span id="times">&#x8F7D;&#x5165;&#x65F6;&#x5206;&#x79D2;...</span><script>var now=new Date;function createtime(){var n=new Date("04/21/2021 12:00:00");now.setTime(now.getTime()+250),days=(now-n)/1e3/60/60/24,dnum=Math.floor(days),hours=(now-n)/1e3/60/60-24*dnum,hnum=Math.floor(hours),1==String(hnum).length&&(hnum="0"+hnum),minutes=(now-n)/1e3/60-1440*dnum-60*hnum,mnum=Math.floor(minutes),1==String(mnum).length&&(mnum="0"+mnum),seconds=(now-n)/1e3-86400*dnum-3600*hnum-60*mnum,snum=Math.round(seconds),1==String(snum).length&&(snum="0"+snum),document.getElementById("timeDate").innerHTML=" 本站已安全运行 "+dnum+" 天 ",document.getElementById("times").innerHTML=hnum+" 小时 "+mnum+" 分 "+snum+" 秒"}setInterval("createtime()",250)</script><div class="copyright-info info-item"> Copyright &#xA9; <span>2019</span>&#xA0;-&#xA0; 2021&#xA0;<i class="fab fa-battle-net"></i>&#xA0;<a href="/">Miracle Network Technology all rights reserved</a></div></div></footer></div></div><div class="right-bottom-side-tools"><div class="side-tools-container"><ul class="side-tools-list"><li class="tools-item tool-font-adjust-plus flex-center"><i class="fas fa-search-plus"></i></li><li class="tools-item tool-font-adjust-minus flex-center"><i class="fas fa-search-minus"></i></li><li class="tools-item tool-expand-width flex-center"><i class="fas fa-arrows-alt-h"></i></li><li class="tools-item tool-dark-light-toggle flex-center"><i class="fas fa-moon"></i></li><li class="tools-item rss flex-center"><a class="flex-center" href="/atom.xml" target="_blank"><i class="fas fa-rss"></i></a></li><li class="tools-item tool-scroll-to-bottom flex-center"><i class="fas fa-arrow-down"></i></li></ul><ul class="exposed-tools-list"><li class="tools-item tool-toggle-show flex-center"><i class="fas fa-cog fa-spin"></i></li><li class="tools-item tool-scroll-to-top flex-center"><i class="arrow-up fas fa-arrow-up"></i><span class="percent"></span></li></ul></div></div><div class="image-viewer-container"> <img src></div><div class="search-pop-overlay"><div class="popup search-popup"><div class="search-header"><span class="search-input-field-pre"><i class="fas fa-keyboard"></i></span><div class="search-input-container"> <input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="search" class="search-input"></div><span class="popup-btn-close"><i class="fas fa-times"></i></span></div><div id="search-result"><div id="no-result"><i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i></div></div></div></div></main><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/dark-light-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/local-search.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/code-copy.js"></script><div class="post-scripts pjax"></div><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/libs/pjax.min.js"></script><script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script><canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:1;pointer-events:none"></canvas><script type="text/javascript" src="/js/src/animejs/2.2.0/anime.min.js"></script><script type="text/javascript" src="/js/fireworks.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({pluginRootPath:"live2dw/",pluginJsPath:"lib/",pluginModelPath:"assets/",tagMode:!1,debug:!1,model:{jsonPath:"/live2dw/assets/wanko.model.json"},display:{position:"right",width:150,height:300},mobile:{show:!1},log:!1})</script></body></html>
